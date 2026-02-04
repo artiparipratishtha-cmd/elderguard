@@ -556,7 +556,7 @@ Scammer message: "${scammerMsg}"
   const currentUpiHandleInfo = () => {
     const match = protectInput.match(/@([\w]+)/);
     if (!match) return null;
-    const handle = match.toLowerCase();
+    const handle = match[1].toLowerCase();
     return KNOWN_UPI_HANDLES[handle] || null;
   };
 
