@@ -329,7 +329,7 @@ Output only that short message.
       fd.append('lang', lang);
       fd.append('searchableInfo', searchableInfo || '');
 
-      const res = await fetch('http://localhost:5000/api/analyse-warrant', {
+      const res = await fetch('http://elderguard-backend-mjpg.onrender.com/api/analyse-warrant', {
         method: 'POST',
         body: fd,
       });
@@ -393,7 +393,7 @@ Output only that short message.
       fd.append('file', qrFile);
       fd.append('lang', lang);
 
-      const res = await fetch('http://localhost:5000/api/analyse-qr', {
+      const res = await fetch('http://elderguard-backend-mjpg.onrender.com/api/analyse-qr', {
         method: 'POST',
         body: fd,
       });
