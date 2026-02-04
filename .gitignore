@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+elderguard-backend/node_modules/
+elderguard-backend/uploads/
+
